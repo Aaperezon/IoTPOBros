@@ -1,0 +1,17 @@
+"""
+Comandos para crear la BD de rover 2020 con la tabla que se va a usar.
+"""
+
+CREATE DATABASE iotpobros
+USE iotpobros
+
+CREATE TABLE experiment (
+	id int not null auto_increment,
+	time timestamp, 
+	switchValue boolean not null,
+	
+	primary key(id)
+);
+
+
+select * from switch;
